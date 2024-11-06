@@ -97,7 +97,6 @@ footer{
     text-align: justify;
     padding-left: 10%;
   }
-  
 
   .maccontent{
     display: flex;
@@ -112,7 +111,7 @@ footer{
     align-items: center;
     border-radius: 50px;
     margin-bottom: 100px;
-    
+    visibility: hidden;
   }
   .mac_zdjęcie img{
     display: flex;
@@ -150,6 +149,7 @@ footer{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-radius: 30px;
     justify-content: center;
+    visibility: hidden;
   }
   .contacttel{
     display: flex;
@@ -165,11 +165,12 @@ footer{
 .onas1{
   background-image: url("team.gif");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   margin-top: -100px;
+  visibility: hidden;
 }
 .onas2{
   
@@ -177,4 +178,15 @@ footer{
   background-color: #000000;
   opacity: 0.75;
   width: 100%;
+  color: #FFFFFF;
+  font-size: 50px;
+}
+.onas3{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 5%;
+  font-weight: bold;
+  line-height: 150%;
+  text-indent: 3%;
 }
