@@ -2,10 +2,11 @@
 $DATABASE_HOST="localhost";
 $DATABASE_USER="admin1";
 $DATABASE_PASS="admin1";
-$DATABASE_NAME-"stronaCh";
+$DATABASE_NAME="stronaCh";
 $link=mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-if (!conn){
-    die ("Nieudana próba połączenia z bazą danych".mysqli_connect_error());
+if (mysqli_connect_error()){
+    exit("Nieudana próba połączenia z bazą danych".my_sqli_connect_error());
+}else{
+echo "połączenie nawiązano ";
 }
-echo "połączenie nawiązano";
 ?>

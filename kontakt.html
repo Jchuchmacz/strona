@@ -20,7 +20,7 @@
                 </ul>
             </h1>
         </nav>
-    </header>ą
+    </header>
     <main class="kontakt">
             <div class="maccontact">
                 <div class="textcontact">
@@ -47,15 +47,43 @@
                 </div>
             </div>
             
-        
-    </main>
+        </main>
+        <main class="form1">
+            <div class="form">
+                <form action="insert.php" method="POST">
+                  <div class="title">Hello</div>
+                  <div class="subtitle">Wpisz wiadomość</div>
+                  <div class="input-container ic1">
+                   <input Name="Name" class="input" type="text" placeholder=" " required/>
+                    <div class="cut"></div>
+                    <label for="Name" class="placeholder">Name</label>
+                  </div>
+                  <div class="input-container ic2">
+                    <input Name="Surname" class="input" type="text" placeholder=" " required/>
+                    <div class="cut cut-short"></div>
+                    <label for="Surname" class="placeholder">Surname</label >
+                  </div>
+                  <div class="input-container ic1">
+                    <input Name="Message" class="input" type="text" placeholder=" " required/>
+                    <div class="cut"></div>
+                    <label for="Message" class="placeholder">Message</label>
+                    </div> 
+                  <input type="submit" name="submit" class="submit" value="Wyślij">
+              </form>   
+            </div>
+
+
+
+
+        </main>
     <footer>
         <p>&copy 2024 maczek.</p>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal().reveal('.maccontact', {delay: 300});
-
+        ScrollReveal().reveal('.maccontact', {delay: 300}); 
+        ScrollReveal().reveal('.form', {delay: 300});
+        
     </script>
 </body>
 </html>

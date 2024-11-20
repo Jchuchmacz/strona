@@ -21,29 +21,13 @@
             </h1>
         </nav>
     </header>
-    <main class="form1">
-        <div class="form">
-            <form action="insert.php" method="POST">
-              <div class="title">Hello</div>
-              <div class="subtitle">Wpisz wiadomość</div>
-              <div class="input-container ic1">
-               <input Name="Name" class="input" type="text" placeholder=" " required/>
-                <div class="cut"></div>
-                <label for="Name" class="placeholder">Name</label>
-              </div>
-              <div class="input-container ic2">
-                <input Name="Surname" class="input" type="text" placeholder=" " required/>
-                <div class="cut cut-short"></div>
-                <label for="Surname" class="placeholder">Surname</label >
-              </div>
-              <div class="input-container ic1">
-                <input Name="Message" class="input" type="text" placeholder=" " required/>
-                <div class="cut"></div>
-                <label for="Message" class="placeholder">Message</label>
-                </div> 
-              <input type="submit" name="submit" class="submit" value="Wyślij">
-          </form>   
-        </div>
+    <main class="logowanie">
+        <form action="messages.php" method="POST">
+                <input type="text" class="input1" name="username" placeholder="Username">
+                <input type="password" class="input1" name="password" placeholder="Password">
+ 
+                <input type="submit" class="button">
+        </form>
         
     </main>
     <footer>
