@@ -17,19 +17,12 @@
                     <li> <a href="kontakt.html" class="button b1">Kontakt</a></li>
                     <li><a href="oferta.html" class="button b2">Oferta</a></li>
                     <li><a href="o_nas.html" class="button b3">O nas</a></li>
+                    <li><a href="zaloguj.php" class="button b4">Zaloguj</a></li>
                 </ul>
             </h1>
         </nav>
     </header>
-    <main class="logowanie">
-        <form action="messages.php" method="POST">
-                <input type="text" class="input1" name="username" placeholder="Username">
-                <input type="password" class="input1" name="password" placeholder="Password">
- 
-                <input type="submit" class="button">
-        </form>
-        
-    </main>
+    
     <footer>
         <p>&copy 2024 maczek.</p>
     </footer>

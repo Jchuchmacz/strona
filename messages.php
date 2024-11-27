@@ -1,31 +1,27 @@
 <?php
-include"db-connection.php"
-
-if(isset($_POST['login'], $_POST['haslo'])){
-    $username=$_POST['login'];
-    $password=$_POST['haslo'];
-    $username=stripcslashes($username);
-    $password=stripcslashes($password);
-
-    $sql="SELECT * FROM uzytkownicy where login= '$username' and haslo='$password'";
+include"db-connection.php";
+session_start();
+if(isset($_SESSION["name"])){
+    $sql="SELECT Id, Name, Surname, Message FROM text";
     $result=mysqli_query($link, $sql);
-    $row=mysqli_fetch_assoc($result);
-    $count=mysqli_num_rows($result);
-    
-    if(count==1){
-        $_SESSION["name"]=$username;
-        echo "jesteś zalogowany";
+    if(mysqli_num_rows($result)>0){
+        echo "hello";
+        while($row=mysqli_fetch_assoc($result)){
+            echo "Id: ".$row["Id"]. "Imie: ".$row["Name"]. "Nazwisko: ".$row["Surname"] "Wiadomość: ".$row["Message"]."/br";
+
+        }
+
     }else{
-        echo "błędny login lub hasło";
+       echo "Brak danych";
     }
 }
+
+
 mysqli_close($link);
 
 
 
-#<footer>
-#<p>wyloguj się</p>
-#    <a class="link" href="logout.php">wyloguj się</a>
+
 
 
 

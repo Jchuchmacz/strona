@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="o_nas">
+<body>
     <header>
         <nav>
             <h1>
@@ -22,13 +22,24 @@
             </h1>
         </nav>
     </header>
-    <main >
-        <div class="onas1">
-            <div class="onas2">
-                <div class="onas3"> ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum eligendi voluptates est praesentium, esse distinctio libero animi nulla optio harum fugiat incidunt tenetur, facilis exercitationem ipsa repudiandae? Accusamus, molestias!
+    <main class="form1">
+        <div class="form">
+            <form action="login.php" method="POST">
+                <div class="title">Zaloguj</div>
+                <div class="subtitle">Podaj login i hasło</div>
+                <div class="input-container ic1">
+                    <input type="text" class="input1" Name="login" placeholder="" required/>
+                    <div class="cut"></div>
+                    <label for="Name" class="placeholder">Login</label>
                 </div>
-            </div>
-        </div>
+                <div class="input-container ic2">
+                    <input type="password" class="input1" name="haslo" placeholder="">
+                    <div class="cut"></div>
+                    <label for="Name" class="placeholder">Hasło</label>
+                </div>
+                <input type="submit" name="submit" class="submit" value="Wyślij">
+            </form>     
+</div>
         
     </main>
     <footer>
@@ -36,8 +47,8 @@
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal().reveal('.onas1', {delay: 300});
-
+        ScrollReveal().reveal('.form', {delay: 300});
+        
     </script>
 </body>
 </html>
