@@ -14,6 +14,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 ul{
@@ -34,6 +35,7 @@ footer{
     background-color: #000000;
     color: #FFFFFF;
     margin-bottom: 0px;
+    margin-top: 2%;
 }
 .button {
     color: white;
@@ -175,18 +177,19 @@ footer{
 .onas1{
   background-image: url("team.gif");
   background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
+  background-size: 100vw 100vh;  display: flex;
   max-width: 100%;
   height: auto;
   margin-top: -100px;
   visibility: hidden;
+
 }
+
 .onas2{
   
-  height: 3000px;
+  height: imgs;
   background-color: #000000;
-  opacity: 0.75;
+  opacity: 0.6;
   width: 100%;
   color: #FFFFFF;
   font-size: 50px;
@@ -198,7 +201,8 @@ footer{
   padding: 5%;
   font-weight: bold;
   line-height: 150%;
-  text-indent: 3%;
+  align-self: center;
+  padding-top: 25%;
 }
 .form1{
   display: flex;
@@ -354,16 +358,26 @@ footer{
 }
 table{
   width: 80%;
-  border: 3px solid ;
-  align-items: center;
+  border: 1px solid ;
+  border-collapse: collapse;
+  font-size: 40px;
+  background-color:#3f3f4d;
+  margin: auto;
 }
 th{
   height: 5%;
   text-align: left;
-  border: 3px solid ;
+  border: 1px solid ;
 }
 td{
   text-align: left;
-  border: 3px solid ;
+  border: 1px solid ;
+  
+}
+th, td{
+  padding: 20px;
+  text-align: left;
 }
 
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color:rgb(0, 0, 255);}

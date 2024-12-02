@@ -63,5 +63,7 @@ mysqli_close($link);
         ScrollReveal().reveal('.onas1', {delay: 300});
 
     </script>
+    <script>
+    
 </body>
 </html>

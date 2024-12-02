@@ -25,7 +25,12 @@
     <main >
         <div class="onas1">
             <div class="onas2">
-                <div class="onas3"> ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum eligendi voluptates est praesentium, esse distinctio libero animi nulla optio harum fugiat incidunt tenetur, facilis exercitationem ipsa repudiandae? Accusamus, molestias!
+                <div class="onas3"> Jesteśmy serwisem partnerskim Apple. <br>
+                                    Działamy od 2015 roku. <br>
+                                    Mamy siedzibę na ulicy Jabłecznej 9/11 w Krakowie. <br>
+                                    Obecnie nasz zespół składa się z 3 osób. <br>
+                                    Chętnie zatrudnimy nowych pracowników. <br>
+
                 </div>
             </div>
         </div>
@@ -37,7 +42,15 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         ScrollReveal().reveal('.onas1', {delay: 300});
-
+        function Scale(width_offset, height_offset) {
+   var imgs = document.getElementsByClassName("team.gif");
+   for (var i = 0; i < imgs.length; i++) {
+     var curr_width = parseInt(window.getComputedStyle(imgs[i]).width); // extract dom's width
+     var curr_height = parseInt(window.getComputedStyle(imgs[i]).height); //extract dom's height
+     imgs[i].style.width = curr_width + width_offset + "px";
+     imgs[i].style.height = curr_height + height_offset + "px";
+   }
+}
     </script>
 </body>
 </html>
