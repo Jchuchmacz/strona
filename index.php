@@ -22,7 +22,47 @@
             </h1>
         </nav>
     </header>
-    
+    <main>
+    <?php
+include "db-connection.php";
+session_start();
+if(isset($_SESSION["name"])){
+    $sql="SELECT Id, naglowek, ogloszenie, data FROM ogloszenia";
+    $result=mysqli_query($link, $sql);
+    if(mysqli_num_rows($result)>0){
+        
+        while($row=mysqli_fetch_assoc($result)){
+            echo "<div class=\"news\">"; 
+                    echo "<img class=\"newsimg\" src=\"applehq.gif\"";
+                echo "<br>";
+                echo "<div class=\"naglowek\">";
+                    echo $row["naglowek"]."<br>";
+                echo "</div>";
+                echo "<div class='date'>";
+                    echo $row["data"]."<br>";
+                echo "</div>";
+                echo "<div class='ogloszenie'>";
+                    echo $row["ogloszenie"]."<br>";
+                echo "</div>";
+
+
+            
+        }    
+        echo "</div>";
+   }
+   
+   else{
+      echo "Brak danych";
+    }
+}
+
+
+mysqli_close($link);
+?> 
+
+
+
+    </main>
     <footer>
         <p>&copy 2024 maczek.</p>
     </footer>

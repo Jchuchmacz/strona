@@ -49,9 +49,30 @@ if(isset($_SESSION["name"])){
 
 
 mysqli_close($link);
-?>
-        <!-- <li><a href="messagesshow.php" class="button b5">pokaz dane</a></li> -->
-        
+?>  <div class="form1">
+        <div class="form">
+            <form action="insert2.php" method="POST">
+                <div class="title">Hello</div>
+                <div class="subtitle">Wpisz dane ogłoszenia</div>
+                <div class="input-container ic1">
+                     <input Name="naglowek" class="input" type="text" placeholder=" " required/>
+                    <div class="cut"></div>
+                    <label for="naglowek" class="placeholder">Nagłówek</label>
+                </div>
+                <div class="input-container ic2">
+                    <input Name="ogloszenie" class="input" type="text" placeholder=" " required/>
+                    <div class="cut cut-short"></div>
+                    <label for="ogloszenie" class="placeholder">Ogloszenie</label >
+                </div>
+                <div class="input-container ic1">
+                    <input Name="date" class="input" type="text" placeholder=" " required/>
+                    <div class="cut"></div>
+                    <label for="date" class="placeholder">Data w formacie YYYY-MM-DD</label>
+                </div> 
+                <input type="submit" name="submit" class="submit" value="Wyślij">
+            </form>   
+        </div>
+</div>
         
         
     </main>
